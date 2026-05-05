@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUNAAF BHAI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1267790938878745');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1267790938878745&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{display:flex;justify-content:center;background:#021b16;}
+
+.wrapper{
+max-width:420px;width:100%;min-height:100vh;padding:25px 18px;color:white;text-align:center;position:relative;overflow:hidden;
+background:linear-gradient(270deg,#021b16,#064b38,#021b16);
+background-size:400% 400%;
+animation:bgMove 10s linear infinite;
+}
+
+/* GRID */
+.wrapper::before{
+content:"";position:absolute;inset:0;
+background-image:
+linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+background-size:40px 40px;
+}
+
+/* SHINE EFFECT */
+.wrapper::after{
+content:"";
+position:absolute;
+top:-50%;left:-50%;
+width:200%;height:200%;
+background:linear-gradient(120deg,transparent,rgba(255,255,255,0.08),transparent);
+animation:shine 6s linear infinite;
+}
+
+@keyframes shine{
+0%{transform:translateX(-100%) rotate(25deg);} 
+100%{transform:translateX(100%) rotate(25deg);} 
+}
+
+@keyframes bgMove{0%{background-position:0% 50%;}100%{background-position:100% 50%;}}
+
+.content{position:relative;z-index:2;}
+
+.profile{width:110px;height:110px;margin:auto;margin-bottom:15px;padding:5px;border-radius:20px;background:linear-gradient(135deg,#00ff95,#00c3ff);box-shadow:0 0 20px rgba(0,255,149,0.6);} 
+.profile img{width:100%;height:100%;border-radius:16px;object-fit:cover;}
+
+h1{font-size:32px;margin-bottom:5px;}
+.subtitle{color:#00ff95;margin-bottom:5px;}
+.subtext{font-size:13px;color:#ccc;margin-bottom:20px;}
+
+.features{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+
+.box{padding:14px;border-radius:18px;background:rgba(255,255,255,0.06);position:relative;}
+
+.box::before{content:"";position:absolute;inset:0;border-radius:18px;padding:1px;background:linear-gradient(120deg,#00ff95,#00c3ff);-webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0.4;}
+
+.box h3{font-size:14px;color:#00ff95;}
+.box p{font-size:11px;color:#ddd;}
+
+/* BUTTON */
+.join-btn{
+position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:10px;
+padding:16px;margin:25px 0;border-radius:40px;font-weight:600;color:white;text-decoration:none;
+background:linear-gradient(270deg,#00ff95,#00c3ff,#00ff95);
+background-size:300% 300%;
+animation:btnGradient 5s linear infinite, pulse 2s infinite;
+}
+
+.join-btn img{width:22px;height:22px;}
+
+@keyframes btnGradient{0%{background-position:0% 50%;}100%{background-position:100% 50%;}}
+@keyframes pulse{0%{transform:scale(1);}50%{transform:scale(1.05);}100%{transform:scale(1);}}
+
+.join-btn span{position:absolute;border-radius:50%;transform:scale(0);animation:ripple 0.6s linear;background:rgba(255,255,255,0.5);} 
+@keyframes ripple{to{transform:scale(4);opacity:0;}}
+
+.footer{font-size:13px;}
+.footer span{color:#00ff95;}
+.disclaimer{font-size:11px;color:#ccc;margin-top:8px;}
+
+/* RIGHT FLOAT BUTTON */
+.telegram-float{
+position:fixed;bottom:18px;right:18px;width:65px;height:65px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+background:#0088cc;box-shadow:0 0 25px rgba(0,136,204,0.8);
+animation:floatBtn 2s infinite alternate, pulseFloat 2s infinite;
+z-index:999;
+}
+
+.telegram-float img{width:32px;height:32px;}
+
+@keyframes floatBtn{from{transform:translateY(0);}to{transform:translateY(-6px);}}
+@keyframes pulseFloat{0%{box-shadow:0 0 15px rgba(0,136,204,0.6);}50%{box-shadow:0 0 30px rgba(0,136,204,1);}100%{box-shadow:0 0 15px rgba(0,136,204,0.6);}}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="content">
+
+<div class="profile"><img src="munaaf.jpg" alt="MUNAAF"></div>
+
+<h1>MUNAAF</h1>
+<div class="subtitle">Premium Trading Community 🚀</div>
+<div class="subtext">Learn • Trade • Grow</div>
+
+<div class="features">
+<div class="box"><h3>📊 Insights</h3><p>Market direction</p></div>
+<div class="box"><h3>🎓 Learning</h3><p>Step training</p></div>
+<div class="box"><h3>💎 Setups</h3><p>Quality trades</p></div>
+<div class="box"><h3>📈 Growth</h3><p>Consistency</p></div>
+</div>
+
+<a href="https://t.me/+ZgWjpoP_HQxiMGMx" target="_blank" class="join-btn" id="btn">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+Join Telegram
+</a>
+
+<div class="footer">Managed by <span>ANNA Group</span></div>
+<div class="disclaimer">Educational only. Trading involves risk.</div>
+
+</div>
+</div>
+
+<a href="https://t.me/+ZgWjpoP_HQxiMGMx" target="_blank" class="telegram-float">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+</a>
+
+<script>
+const btn = document.getElementById('btn');
+btn.addEventListener('click', function(e){
+const circle = document.createElement('span');
+const rect = this.getBoundingClientRect();
+const size = Math.max(rect.width, rect.height);
+
+circle.style.width = circle.style.height = size + 'px';
+circle.style.left = e.clientX - rect.left - size/2 + 'px';
+circle.style.top = e.clientY - rect.top - size/2 + 'px';
+
+this.appendChild(circle);
+setTimeout(()=> circle.remove(), 600);
+});
+</script>
+
+</body>
+</html>
